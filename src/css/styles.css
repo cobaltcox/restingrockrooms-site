@@ -1,0 +1,50 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #000000;
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+.logo img {
+  width: 50px;
+}
+
+.main {
+  padding: 1rem;
+}
+
+.intro {
+  background-color: #f4f4f4;
+  padding: 1rem;
+  text-align: center;
+}
+
+.ratings {
+  display: flex;
+  justify-content: space-around;
+  padding: 1rem 0;
+}
+
+.listings {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.listing {
+  border: 1px solid #ccc;
+  padding: 1rem;
+  margin: 0.5rem;
+  width: 80%;
+}
+
+.listing img {
+  width: 100%;
+  height: auto;
+}
