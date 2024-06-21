@@ -9,6 +9,7 @@ Build on github
 Deploy on Cloudflare
 
 **Branch Strategy:**
-/ Main
-  / Public
-  / Stage
+<ul><li>Main</li>
+  <li>Public</li>
+  <li>Stage</li>
+</ul>
