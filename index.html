@@ -1,80 +1,377 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=500, initial-scale=1.0">
-  <title>Resting Rock Rooms</title>
-  <link rel="stylesheet" href="./assets/css/styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=500, initial-scale=1.0">
+    <title>Resting Rock Rooms</title>
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <!-- Add this line for Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
+
 <body>
-  <header>
-    <div class="logo">
-      <img src="./assets/images/RRR_Logo2024_Horizontal.png" alt="Resting Rock Rooms">
+    <header>
+        <div class="logo">
+            <img src="./assets/images/brand/RRR_Logo2024_Horizontal.png" alt="Resting Rock Rooms">
+        </div>
+    </header>
+    <nav id="navbar" class="navbar">
+        <div class="navbar-container">
+            <div class="navbar-logo">
+                <a href="#"><img src="./assets/images/brand/RRR_Logo2024_Horizontal.png" alt="Resting Rock Rooms"></a>
+            </div>
+            <button class="navbar-toggle" id="js-navbar-toggle">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="main-nav" id="js-menu">
+                <li><a href="#cta">Welcome</a></li>
+                <li><a href="#listings">Listings</a></li>
+                <li><a href="#amenities">Amenities</a></li>
+                <li><a href="#layout">Layout</a></li>
+                <li><a href="#activities">Activities</a></li>
+                <li><a href="#reviews">Reviews</a></li>
+                <li><a href="#hosts">Meet The Hosts</a></li>
+            </ul>
+        </div>
+    </nav>
+    <main>
+        <!-- CTA -->
+        <section class="cta" id="cta">
+            <h1>Modern mountain top cottage 3 bed 2.5 bath, rent by the room. <a href="">Book Now!</a></h1>
+        </section>
+        <!-- Introduction -->
+        <section class="textblock">
+            <h1>Welcome to Resting Rooms 👋</h1>
+            <p>A boutique house hotel nestled in the historic Fairyland neighborhood on scenic Lookout Mountain. Modern
+                amenities wrapped in a charming fairy tale cottage located in a serene and convenient location.</p>
+        </section>
+        <!-- Accolades -->
+        <section class="ratings">
+            <div class="rating accolade">
+                <div class="rating-value">4.99</div>
+                <div class="rating-stars">★★★★★</div>
+            </div>
+            <div class="guest-favorite accolade">
+                <i class="fas fa-laurel-left"></i>
+                <div class="award-content">
+                    <div class="award-title">Guest Favorite</div>
+                    <div class="award-label">Top 10% Worldwide</div>
+                </div>
+                <i class="fas fa-laurel-right"></i>
+            </div>
+            <div class="reviews accolade">
+                <div class="review-count">235</div>
+                <div class="review-label">Verified Reviews</div>
+            </div>
+        </section>
+
+        <!-- Listings Start -->
+        <section class="listings" id="listings">
+            <div class="listing">
+                <div class="airbnb-embed-frame" data-id="970433428006798101" data-view="home" data-hide-price="true"
+                    style="width: 450px; height: 300px; margin: auto;"><a
+                        href="https://www.airbnb.com/rooms/970433428006798101?guests=1&amp;adults=1&amp;s=66&amp;source=embed_widget">View
+                        On Airbnb</a><a
+                        href="https://www.airbnb.com/rooms/970433428006798101?guests=1&amp;adults=1&amp;s=66&amp;source=embed_widget"
+                        rel="nofollow">Home in Lookout Mountain · ★5.0 · 2 bedrooms · 2 beds · 1.5 baths</a>
+                    <script async="" src="https://www.airbnb.com/embeddable/airbnb_jssdk"></script>
+                </div>
+                <div>
+                    <p>Perfect for a small groups and families</p>
+                </div>
+            </div>
+            <div class="listing">
+                <div class="airbnb-embed-frame" data-id="49244060" data-view="home" data-hide-price="true"
+                    style="width: 450px; height: 300px; margin: auto;"><a
+                        href="https://www.airbnb.com/rooms/49244060?guests=1&amp;adults=1&amp;s=66&amp;source=embed_widget">View
+                        On Airbnb</a><a
+                        href="https://www.airbnb.com/rooms/49244060?guests=1&amp;adults=1&amp;s=66&amp;source=embed_widget"
+                        rel="nofollow">Home in Lookout Mountain · ★4.97 · 1 bedroom · 1 bed · 1.5 baths</a>
+                    <script async="" src="https://www.airbnb.com/embeddable/airbnb_jssdk"></script>
+                </div>
+                <div>
+                    <p>Great for singles and couples for a lux stay</p>
+                </div>
+            </div>
+            <div class="listing">
+                <div class="airbnb-embed-frame" data-id="563650113997355613" data-view="home" data-hide-price="true"
+                    style="width: 450px; height: 300px; margin: auto;"><a
+                        href="https://www.airbnb.com/rooms/563650113997355613?guests=1&amp;adults=1&amp;s=66&amp;source=embed_widget">View
+                        On Airbnb</a><a
+                        href="https://www.airbnb.com/rooms/563650113997355613?guests=1&amp;adults=1&amp;s=66&amp;source=embed_widget"
+                        rel="nofollow">Home in Lookout Mountain · ★5.0 · 1 bedroom · 1 bed · 1.5 baths</a>
+                    <script async="" src="https://www.airbnb.com/embeddable/airbnb_jssdk"></script>
+                </div>
+                <div>
+                    <p>Great for singles on a budget</p>
+                </div>
+            </div>
+        </section>
+        <!-- Amenities -->
+        <section class="content-section" id="amenities">
+            <h2>Amenities</h2>
+            <div class="content-container">
+                <div class="image-container">
+                    <img src="./assets/images/amenities/placeholder.jpg" alt="Amenities" class="feature-image">
+                    <button class="fullscreen-btn">
+                        <i class="fas fa-expand"></i>
+                    </button>
+                </div>
+                <div class="text-container">
+                    <h3>Modern Comfort in a Mountain Setting</h3>
+                    <ul class="feature-list">
+                        <li><i class="fas fa-wifi"></i> High-speed WiFi (Fiber Optic)</li>
+                        <li><i class="fas fa-tv"></i> Smart TV with streaming</li>
+                        <li><i class="fas fa-coffee"></i> Coffee maker</li>
+                        <li><i class="fas fa-bath"></i> Free onsite parking</li>
+                        <li><i class="fas fa-bath"></i> Luxury bathroom</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!-- The Layout -->
+        <section class="textblock" id="layout">
+            <h1>The Layout</h1>
+            <p>text goes here</p>
+        </section>
+        <!-- Activities -->
+        <section class="content-section" id="activities">
+            <h2>Activities</h2>
+            <div class="content-container">
+                <!-- Rock City: ~400,000+ visitors/year -->
+                <div class="activity-item">
+                    <div class="image-container">
+                        <img src="./assets/images/activities/rockcity.jpg" alt="Rock City Gardens"
+                            class="feature-image">
+                        <button class="fullscreen-btn">
+                            <i class="fas fa-expand"></i>
+                        </button>
+                    </div>
+                    <div class="activity-text">
+                        <h3>Rock City Gardens</h3>
+                        <p>Experience this natural wonder featuring massive ancient rock formations, enchanting gardens,
+                            and the famous "See Seven States" panoramic view. A blend of natural splendor and whimsical
+                            charm makes this a must-visit attraction.</p>
+                    </div>
+                </div>
+
+                <!-- Ruby Falls: ~400,000+ visitors/year -->
+                <div class="activity-item">
+                    <div class="image-container">
+                        <img src="./assets/images/activities/rubyfalls.png" alt="Ruby Falls" class="feature-image">
+                        <button class="fullscreen-btn">
+                            <i class="fas fa-expand"></i>
+                        </button>
+                    </div>
+                    <div class="activity-text">
+                        <h3>Ruby Falls</h3>
+                        <p>Descend 260 feet into Lookout Mountain to witness America's deepest commercial cave and
+                            largest underground waterfall. This stunning 145-foot underground waterfall is illuminated
+                            by colorful lights, creating a spectacular natural show.</p>
+                    </div>
+                </div>
+
+                <!-- Downtown Chattanooga: Major destination -->
+                <div class="activity-item">
+                    <div class="image-container">
+                        <img src="./assets/images/activities/chattanooga.jpg" alt="Downtown Chattanooga"
+                            class="feature-image">
+                        <button class="fullscreen-btn">
+                            <i class="fas fa-expand"></i>
+                        </button>
+                    </div>
+                    <div class="activity-text">
+                        <h3>Downtown Chattanooga</h3>
+                        <p>Experience the vibrant city life just 15 minutes away. Enjoy restaurants, shopping, and
+                            cultural attractions in this bustling downtown area, including the Tennessee Aquarium and
+                            the Creative Discovery Museum.</p>
+                    </div>
+                </div>
+
+                <!-- Incline Railway: ~200,000 visitors/year -->
+                <div class="activity-item">
+                    <div class="image-container">
+                        <img src="./assets/images/activities/inclinerailway.jpg" alt="Incline Railway"
+                            class="feature-image">
+                        <button class="fullscreen-btn">
+                            <i class="fas fa-expand"></i>
+                        </button>
+                    </div>
+                    <div class="activity-text">
+                        <h3>Lookout Mountain Incline Railway</h3>
+                        <p>Take a ride on America's most amazing mile, climbing the steepest passenger railway in the
+                            world. This historic trolley-style car climbs through the natural beauty of Lookout Mountain
+                            at a breathtaking 72.7% grade.</p>
+                    </div>
+                </div>
+
+                <!-- Point Park: ~100,000 visitors/year -->
+                <div class="activity-item">
+                    <div class="image-container">
+                        <img src="./assets/images/activities/pointpark.png" alt="Point Park" class="feature-image">
+                        <button class="fullscreen-btn">
+                            <i class="fas fa-expand"></i>
+                        </button>
+                    </div>
+                    <div class="activity-text">
+                        <h3>Point Park</h3>
+                        <p>Visit this historic Civil War site offering spectacular views of Chattanooga Valley and the
+                            Tennessee River. The park features military monuments, hiking trails, and interpretive
+                            exhibits about the "Battle Above the Clouds."</p>
+                    </div>
+                </div>
+
+                <!-- Covenant College -->
+                <div class="activity-item">
+                    <div class="image-container">
+                        <img src="./assets/images/activities/covenant.png" alt="Point Park" class="feature-image">
+                        <button class="fullscreen-btn">
+                            <i class="fas fa-expand"></i>
+                        </button>
+                    </div>
+                    <div class="activity-text">
+                        <h3>Covenant College</h3>
+                        <p>Former castle and luxury resort turned private Christian liberal arts college.</p>
+                    </div>
+                </div>
+
+                <!-- Continue with other activities in the same pattern -->
+
+                <!-- Keep the feature list at the end -->
+                <div class="text-container">
+                    <h3>Explore Lookout Mountain</h3>
+                    <ul class="feature-list">
+                        <li><i class="fas fa-hiking"></i> Hiking trails</li>
+                        <li><i class="fas fa-mountain"></i> Rock climbing</li>
+                        <li><i class="fas fa-camera"></i> Scenic viewpoints</li>
+                        <li><i class="fas fa-store"></i> Local shopping</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!-- Reviews -->
+        <section class="reviews-section" id="reviews">
+            <h2>What Our Guests Say</h2>
+            <div class="reviews-grid">
+                <!-- Repeat this block for each review -->
+                <div class="review-card">
+                    <div class="reviewer-profile">
+                        <img src="./assets/images/reviews/user1.jpg" alt="Guest Name" class="profile-pic">
+                        <h3 class="reviewer-name">Sarah M.</h3>
+                    </div>
+                    <div class="rating">
+                        <span class="stars">★★★★★</span>
+                        <span class="date">January 2024</span>
+                    </div>
+                    <p class="review-text">"Absolutely stunning location! The room was immaculate and the mountain views
+                        were breathtaking. Can't wait to return!"</p>
+                </div>
+                <div class="review-card">
+                    <div class="reviewer-profile">
+                        <img src="./assets/images/reviews/user1.jpg" alt="Guest Name" class="profile-pic">
+                        <h3 class="reviewer-name">Sarah M.</h3>
+                    </div>
+                    <div class="rating">
+                        <span class="stars">★★★★★</span>
+                        <span class="date">January 2024</span>
+                    </div>
+                    <p class="review-text">"Absolutely stunning location! The room was immaculate and the mountain views
+                        were breathtaking. Can't wait to return!"</p>
+                </div>
+                <div class="review-card">
+                    <div class="reviewer-profile">
+                        <img src="./assets/images/reviews/user1.jpg" alt="Guest Name" class="profile-pic">
+                        <h3 class="reviewer-name">Sarah M.</h3>
+                    </div>
+                    <div class="rating">
+                        <span class="stars">★★★★★</span>
+                        <span class="date">January 2024</span>
+                    </div>
+                    <p class="review-text">"Absolutely stunning location! The room was immaculate and the mountain views
+                        were breathtaking. Can't wait to return!"</p>
+                </div>
+                <div class="review-card">
+                    <div class="reviewer-profile">
+                        <img src="./assets/images/reviews/user1.jpg" alt="Guest Name" class="profile-pic">
+                        <h3 class="reviewer-name">Sarah M.</h3>
+                    </div>
+                    <div class="rating">
+                        <span class="stars">★★★★★</span>
+                        <span class="date">January 2024</span>
+                    </div>
+                    <p class="review-text">"Absolutely stunning location! The room was immaculate and the mountain views
+                        were breathtaking. Can't wait to return!"</p>
+                </div>
+                <div class="review-card">
+                    <div class="reviewer-profile">
+                        <img src="./assets/images/reviews/user1.jpg" alt="Guest Name" class="profile-pic">
+                        <h3 class="reviewer-name">Sarah M.</h3>
+                    </div>
+                    <div class="rating">
+                        <span class="stars">★★★★★</span>
+                        <span class="date">January 2024</span>
+                    </div>
+                    <p class="review-text">"Absolutely stunning location! The room was immaculate and the mountain views
+                        were breathtaking. Can't wait to return!"</p>
+                </div>
+                <div class="review-card">
+                    <div class="reviewer-profile">
+                        <img src="./assets/images/reviews/user1.jpg" alt="Guest Name" class="profile-pic">
+                        <h3 class="reviewer-name">Sarah M.</h3>
+                    </div>
+                    <div class="rating">
+                        <span class="stars">★★★★★</span>
+                        <span class="date">January 2024</span>
+                    </div>
+                    <p class="review-text">"Absolutely stunning location! The room was immaculate and the mountain views
+                        were breathtaking. Can't wait to return!"</p>
+                </div>
+            </div>
+        </section>
+        <!-- Meet The Hosts -->
+        <section class="content-section" id="hosts">
+            <h2>Meet The Hosts</h2>
+            <div class="hosts-container">
+                <div class="host-item">
+                    <div class="image-container">
+                        <img src="./assets/images/hosts/cobalt.png" alt="Host Name" class="feature-image">
+                        <button class="fullscreen-btn">
+                            <i class="fas fa-expand"></i>
+                        </button>
+                    </div>
+                    <div class="host-text">
+                        <h3>Cobalt</h3>
+                        <p>Creative Director working in games with wanderlust. Loves the lesser known places of the
+                            world, small villages, soaring mountains, wild forests and forgotten coastlines.</p>
+                    </div>
+                </div>
+
+                <div class="host-item">
+                    <div class="image-container">
+                        <img src="./assets/images/hosts/hope.png" alt="Host Name" class="feature-image">
+                        <button class="fullscreen-btn">
+                            <i class="fas fa-expand"></i>
+                        </button>
+                    </div>
+                    <div class="host-text">
+                        <h3>Hope</h3>
+                        <p>Passionate about exploring local trails, reading novels, and wellness. Enjoys baking, brewing
+                            kombucha, yoga and bringing the outdoors in.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Add the fullscreen modal -->
+    <div id="fullscreen-modal" class="modal">
+        <span class="close-modal">&times;</span>
+        <img id="modal-image" src="" alt="Fullscreen view">
     </div>
-  </header>
-  <main>
-    <!-- CTA -->
-    <section class="cta">
-      <h1>Modern mountain top cottage 3 bed 2.5 bath, rent by the room. <a href="">Book Now!</a></h1>
-    </section>
-    <section class="ratings">
-      <div class="rating">
-        <span>4.99</span>
-        <span>★★★★★</span>
-      </div>
-      <div class="guest-favorite">
-        <span>Guest favorite</span>
-      </div>
-      <div class="reviews">
-        <span>235 Reviews</span>
-      </div>
-    </section>
-    <!-- Introduction -->
-    <section class="textblock">
-      <h1>Welcome to Resting Rooms 👋</h1>
-      <p>A boutique house hotel nestled in historic Fairyland neighborhood on scenic Lookout Mountain. Modern amenities wrapped in a charming fairy tale cottage located in a serene and convenient location.</p>
-    </section>
-    <!-- Listings Start -->
-    <section class="listings">
-      <div class="listing">
-        <div class="airbnb-embed-frame" data-id="970433428006798101" data-view="home" data-hide-price="true" style="width: 450px; height: 300px; margin: auto;"><a href="https://www.airbnb.com/rooms/970433428006798101?guests=1&amp;adults=1&amp;s=66&amp;source=embed_widget">View On Airbnb</a><a href="https://www.airbnb.com/rooms/970433428006798101?guests=1&amp;adults=1&amp;s=66&amp;source=embed_widget" rel="nofollow">Home in Lookout Mountain · ★5.0 · 2 bedrooms · 2 beds · 1.5 baths</a><script async="" src="https://www.airbnb.com/embeddable/airbnb_jssdk"></script></div>
-        <div><p>Perfect for a small groups and families</p></div>
-      </div>
-      <div class="listing">
-        <div class="airbnb-embed-frame" data-id="49244060" data-view="home" data-hide-price="true" style="width: 450px; height: 300px; margin: auto;"><a href="https://www.airbnb.com/rooms/49244060?guests=1&amp;adults=1&amp;s=66&amp;source=embed_widget">View On Airbnb</a><a href="https://www.airbnb.com/rooms/49244060?guests=1&amp;adults=1&amp;s=66&amp;source=embed_widget" rel="nofollow">Home in Lookout Mountain · ★4.97 · 1 bedroom · 1 bed · 1.5 baths</a><script async="" src="https://www.airbnb.com/embeddable/airbnb_jssdk"></script></div> 
-        <div><p>Great for singles and couples for a lux stay</p></div>
-      </div>
-      <div class="listing">
-        <div class="airbnb-embed-frame" data-id="563650113997355613" data-view="home" data-hide-price="true" style="width: 450px; height: 300px; margin: auto;"><a href="https://www.airbnb.com/rooms/563650113997355613?guests=1&amp;adults=1&amp;s=66&amp;source=embed_widget">View On Airbnb</a><a href="https://www.airbnb.com/rooms/563650113997355613?guests=1&amp;adults=1&amp;s=66&amp;source=embed_widget" rel="nofollow">Home in Lookout Mountain · ★5.0 · 1 bedroom · 1 bed · 1.5 baths</a><script async="" src="https://www.airbnb.com/embeddable/airbnb_jssdk"></script></div>
-        <div><p>Great for singles on a budget</p></div>
-      </div>
-    </section>
-    <!-- Amenities -->
-    <section class="textblock">
-      <h1>Amenities</h1>
-      <p>text goes here</p>
-    </section>
-    <!-- The Layout -->
-    <section class="textblock">
-      <h1>The Layout</h1>
-      <p>text goes here</p>
-    </section>
-    <!-- Things to Do -->
-    <section class="textblock">
-      <h1>Things to Do</h1>
-      <p>text goes here</p>
-    </section>
-    <!-- Reviews -->
-    <section class="textblock">
-      <h1>Reviews</h1>
-      <p>text goes here</p>
-    </section>
-    <!-- Meet The Hosts -->
-    <section class="textblock">
-      <h1>Meet The Hosts</h1>
-      <p>text goes here</p>
-     </section>
-  </main>
-  <script assets="./assets/js/main.js"></script>
+    <!-- Add jQuery first -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <!-- Fix the script tag attribute from 'assets' to 'src' -->
+    <script src="./assets/js/main.js"></script>
 </body>
+
 </html>
