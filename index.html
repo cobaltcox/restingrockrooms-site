@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=500, initial-scale=1.0">
     <title>Resting Rock Rooms</title>
     <link rel="stylesheet" href="./assets/css/styles.css">
-    <!-- Add this line for Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 
@@ -26,7 +25,7 @@
             </button>
             <ul class="main-nav" id="js-menu">
                 <li><a href="#cta">Welcome</a></li>
-                <li><a href="#listings">Listings</a></li>
+                <li><a href="#rooms">Rooms</a></li>
                 <li><a href="#amenities">Amenities</a></li>
                 <li><a href="#layout">Layout</a></li>
                 <li><a href="#activities">Activities</a></li>
@@ -38,36 +37,47 @@
     <main>
         <!-- CTA -->
         <section class="cta" id="cta">
-            <h1>Modern mountain top cottage 3 bed 2.5 bath, rent by the room. <a href="">Book Now!</a></h1>
+            <h1>Modern mountain top cottage 3 bed 2.5 bath, rent by the room. <a href="#rooms">Book Now!</a></h1>
         </section>
         <!-- Introduction -->
         <section class="textblock">
-            <h1>Welcome to Resting Rooms 👋</h1>
+            <h1>Welcome 👋</h1>
             <p>A boutique house hotel nestled in the historic Fairyland neighborhood on scenic Lookout Mountain. Modern
                 amenities wrapped in a charming fairy tale cottage located in a serene and convenient location.</p>
-        </section>
-        <!-- Accolades -->
-        <section class="ratings">
-            <div class="rating accolade">
-                <div class="rating-value">4.99</div>
-                <div class="rating-stars">★★★★★</div>
-            </div>
-            <div class="guest-favorite accolade">
-                <i class="fas fa-laurel-left"></i>
-                <div class="award-content">
-                    <div class="award-title">Guest Favorite</div>
-                    <div class="award-label">Top 10% Worldwide</div>
+                <!-- Accolades -->
+                <section class="ratings">
+                <div class="rating accolade">
+                    <div class="rating-value">4.99</div>
+                    <div class="rating-stars">★★★★★</div>
                 </div>
-                <i class="fas fa-laurel-right"></i>
-            </div>
-            <div class="reviews accolade">
-                <div class="review-count">235</div>
-                <div class="review-label">Verified Reviews</div>
-            </div>
+                <div class="guest-favorite accolade">
+                    <img src="./assets/images/brand/Laurel.png" alt="decoration" class="accolade-decoration-left">
+                    <div class="award-content">
+                        <div class="award-title">Guest Favorite</div>
+                        <div class="award-label">Top 10% Worldwide</div>
+                    </div>
+                    <img src="./assets/images/brand/Laurel.png" alt="decoration" class="accolade-decoration-right">
+                </div>
+                <div class="reviews accolade">
+                    <div class="review-count">235</div>
+                    <div class="review-label">Verified Reviews</div>
+                </div>
+            </section>
         </section>
 
-        <!-- Listings Start -->
-        <section class="listings" id="listings">
+
+        <!-- Room Listings Start -->
+        <section class="listing-section" id="rooms">
+            <div class="section-header">
+                <img src="./assets/images/brand/star.svg" alt="decorative star">
+                <h2>Rooms</h2>
+                <img src="./assets/images/brand/star.svg" alt="decorative star">
+            </div>
+            <div class="textblock">
+                <p>Our rooms are designed to provide a comfortable and relaxing stay for all guests. Choose from our
+                    selection of rooms to find the perfect fit for your stay.</p>
+            </div>
+            <!-- Add listing divs here -->
             <div class="listing">
                 <div class="airbnb-embed-frame" data-id="970433428006798101" data-view="home" data-hide-price="true"
                     style="width: 450px; height: 300px; margin: auto;"><a
@@ -78,7 +88,7 @@
                     <script async="" src="https://www.airbnb.com/embeddable/airbnb_jssdk"></script>
                 </div>
                 <div>
-                    <p>Perfect for a small groups and families</p>
+                    <p>Perfect for small groups and families</p>
                 </div>
             </div>
             <div class="listing">
@@ -104,46 +114,94 @@
                     <script async="" src="https://www.airbnb.com/embeddable/airbnb_jssdk"></script>
                 </div>
                 <div>
-                    <p>Great for singles on a budget</p>
+                    <p>Great for singles and couples on a budget</p>
                 </div>
             </div>
         </section>
         <!-- Amenities -->
         <section class="content-section" id="amenities">
-            <h2>Amenities</h2>
+            <div class="section-header">
+                <img src="./assets/images/brand/star.svg" alt="decorative star">
+                <h2>Amenities</h2>
+                <img src="./assets/images/brand/star.svg" alt="decorative star">
+            </div>
+            <div class="text-container">
+                <p>All rooms include the following amenities as shared spaces:</p>
+            </div>
             <div class="content-container">
-                <div class="image-container">
-                    <img src="./assets/images/amenities/placeholder.jpg" alt="Amenities" class="feature-image">
-                    <button class="fullscreen-btn">
-                        <i class="fas fa-expand"></i>
-                    </button>
+                <div class="activity-item">
+                    <div class="image-container">
+                        <img src="./assets/images/amenities/livingroom.png" alt="Living Room" class="feature-image">
+                    </div>
+                    <div class="activity-text">
+                        <h3>Living Room</h3>
+                        <p>features comfortable seating with books, board games and puzzles</p>
+                    </div>
+                </div>
+                <div class="activity-item">
+                    <div class="image-container">
+                        <img src="./assets/images/amenities/diningroom.png" alt="Dining Room" class="feature-image">
+                    </div>
+                    <div class="activity-text">
+                        <h3>Dining Room</h3>
+                        <p>includes a microwave, electric kettle, Keurig and a selection of teas and coffee</p>
+                    </div>
+                </div>
+                <div class="activity-item">
+                    <div class="image-container">
+                        <img src="./assets/images/amenities/office.png" alt="Dining Room" class="feature-image">
+                    </div>
+                    <div class="activity-text">
+                        <h3>Office Space</h3>
+                        <p>provided yoga mats and a large table for remote work and relaxation</p>
+                    </div>
+                </div>
+                <div class="activity-item">
+                    <div class="image-container">
+                        <img src="./assets/images/amenities/office.png" alt="Outdoor Spaces" class="feature-image">
+                    </div>
+                    <div class="activity-text">
+                        <h3>Outdoor Spaces</h3>
+                        <p>patios, seating, gardens, fire pits, rock formations and art</p>
+                    </div>
                 </div>
                 <div class="text-container">
                     <h3>Modern Comfort in a Mountain Setting</h3>
                     <ul class="feature-list">
                         <li><i class="fas fa-wifi"></i> High-speed WiFi (Fiber Optic)</li>
-                        <li><i class="fas fa-tv"></i> Smart TV with streaming</li>
                         <li><i class="fas fa-coffee"></i> Coffee maker</li>
-                        <li><i class="fas fa-bath"></i> Free onsite parking</li>
-                        <li><i class="fas fa-bath"></i> Luxury bathroom</li>
+                        <li><i class="fas fa-car"></i> Free onsite parking</li>
                     </ul>
                 </div>
             </div>
         </section>
         <!-- The Layout -->
         <section class="textblock" id="layout">
-            <h1>The Layout</h1>
-            <p>text goes here</p>
+            <div class="section-header">
+                <img src="./assets/images/brand/star.svg" alt="decorative star">
+                <h2>The Layout</h2>
+                <img src="./assets/images/brand/star.svg" alt="decorative star">
+            </div>
+            <div class="content-container">
+            <img src="./assets/images/layout/restingrockroomsmap.png" alt="Layout of the house">
+            <p>Parking is located in back of driveway, with lighted path to front door.</p>
+            <p>the rustic stone stairs, use keyless entry at the front door to enter the vestibule welcoming you into the shared spacious living and dining room areas. A shared half bath is located down the hall.</p>
+            <p>Continue to the upper floor to access the private guest rooms and office. Upper bath is reserved for Rosemary and Sage rooms. Lavender suite includes bath.</p>
+            </div>
         </section>
         <!-- Activities -->
         <section class="content-section" id="activities">
-            <h2>Activities</h2>
+            <div class="section-header">
+                <img src="./assets/images/brand/star.svg" alt="decorative star">
+                <h2>Activities</h2>
+                <img src="./assets/images/brand/star.svg" alt="decorative star">
+            </div>
+            <p>Convenient access to many local activities on the mountain and off.</p>
             <div class="content-container">
                 <!-- Rock City: ~400,000+ visitors/year -->
                 <div class="activity-item">
                     <div class="image-container">
-                        <img src="./assets/images/activities/rockcity.jpg" alt="Rock City Gardens"
-                            class="feature-image">
+                        <img src="./assets/images/activities/rockcity.jpg" alt="Rock City Gardens" class="feature-image">
                         <button class="fullscreen-btn">
                             <i class="fas fa-expand"></i>
                         </button>
@@ -192,8 +250,7 @@
                 <!-- Incline Railway: ~200,000 visitors/year -->
                 <div class="activity-item">
                     <div class="image-container">
-                        <img src="./assets/images/activities/inclinerailway.jpg" alt="Incline Railway"
-                            class="feature-image">
+                        <img src="./assets/images/activities/inclinerailway.jpg" alt="Incline Railway" class="feature-image">
                         <button class="fullscreen-btn">
                             <i class="fas fa-expand"></i>
                         </button>
@@ -251,13 +308,17 @@
             </div>
         </section>
         <!-- Reviews -->
-        <section class="reviews-section" id="reviews">
-            <h2>What Our Guests Say</h2>
+        <section class="content-section" id="reviews">
+            <div class="section-header">
+                <img src="./assets/images/brand/star.svg" alt="decorative star">
+                <h2>What Our Guests Say</h2>
+                <img src="./assets/images/brand/star.svg" alt="decorative star">
+            </div>
             <div class="reviews-grid">
                 <!-- Repeat this block for each review -->
                 <div class="review-card">
                     <div class="reviewer-profile">
-                        <img src="./assets/images/reviews/user1.jpg" alt="Guest Name" class="profile-pic">
+                        <img src="./assets/images/reviews/Tammy_2.25.2025.avif" alt="Guest Name" class="profile-pic">
                         <h3 class="reviewer-name">Sarah M.</h3>
                     </div>
                     <div class="rating">
@@ -331,7 +392,11 @@
         </section>
         <!-- Meet The Hosts -->
         <section class="content-section" id="hosts">
-            <h2>Meet The Hosts</h2>
+            <div class="section-header">
+                <img src="./assets/images/brand/star.svg" alt="decorative star">
+                <h2>Meet The Hosts</h2>
+                <img src="./assets/images/brand/star.svg" alt="decorative star">
+            </div>
             <div class="hosts-container">
                 <div class="host-item">
                     <div class="image-container">
@@ -372,6 +437,25 @@
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <!-- Fix the script tag attribute from 'assets' to 'src' -->
     <script src="./assets/js/main.js"></script>
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-text">
+                <h3>Resting Rock Rooms</h3>
+                <p>Your mountain retreat awaits</p>
+            </div>
+            <ul class="footer-links">
+                <li><a href="#cta">Home</a></li>
+                <li><a href="#rooms">Rooms</a></li>
+                <li><a href="#amenities">Amenities</a></li>
+                <li><a href="#layout">Layout</a></li>
+                <li><a href="#activities">Activities</a></li>
+                <li><a href="#reviews">Reviews</a></li>
+            </ul>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Resting Rock Rooms. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>
