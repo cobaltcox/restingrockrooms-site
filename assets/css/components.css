@@ -143,14 +143,32 @@
     transform: scale(1.05);
   }
 
-/* Listing */
-  .listing {
+/* Listings Container */
+.listings-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--spacing-sm);
+    max-width: var(--max-width);
+    margin: -80px;
+    padding: var(--spacing-sm);
+}
+
+/* Individual Listing */
+.listing {
     background-color: var(--color-moss-pale);
-    border-radius: 12px;
-    padding: 1rem;
-    margin: 0.25rem;
+    border-radius: var(--border-radius);
+    padding: var(--spacing-md);
     width: 100%;
-    max-width: fit-content;
-    min-width: 300px;
-    text-align: center;
+    min-height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--spacing-md);
   }
+
+/* Airbnb Embed Frame */
+.airbnb-embed-frame {
+    width: 460px !important;
+    height: 460px !important;
+    margin: auto !important;
+}

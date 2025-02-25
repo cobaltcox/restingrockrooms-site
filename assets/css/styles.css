@@ -273,13 +273,6 @@ header {
   }
 }
 
-.listing-section {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  padding: 1rem;
-}
-
 /* Modal styles */
 .modal {
   display: none;

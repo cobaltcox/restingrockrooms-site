@@ -1,11 +1,11 @@
 .section-root {
-    padding: var(--spacing-lg) var(--spacing-md);
+    padding: var(--spacing-md) var(--spacing-md);
     margin: 0;
 }
 
 .section-content {
     max-width: var(--max-width);
-    margin: 0 auto;
+    margin: auto;
     padding: 0 var(--spacing-md);
 }
 
