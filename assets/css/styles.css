@@ -3,12 +3,12 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    color: var(--color-text);
-    background-color: var(--color-moss-pale);
     padding-top: var(--nav-height);
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    color: var(--color-text);
+    background-color: var(--color-moss-pale);
 }
 
 /* Header & Navigation */
@@ -111,51 +111,6 @@ header {
     padding: 0.75rem 1rem;
     border-top: 1px solid #444;
   }
-}
-
-/* Component Styles */
-.main {
-  padding: 1rem;
-  flex: 1;
-}
-
-/* Section Layout */
-.section-root {
-    padding: 4rem 2rem;
-    margin: 0;
-}
-
-/* Section header styles */
-.section-header {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 2rem;
-  margin: 0 auto 2rem;
-  max-width: 1200px;
-}
-
-.section-header h2 {
-  margin: 0;
-  padding: 0;
-  line-height: 24px; /* Match the height of the stars */
-  display: flex;
-  align-items: center;
-  white-space: nowrap;
-}
-
-.section-header img {
-  width: 24px;
-  height: 24px;
-  display: flex; /* Changed from block to flex */
-  align-self: center; /* Ensures vertical centering */
-  margin: 0;
-  padding: 0;
-}
-
-/* Alternating backgrounds */
-.section-root:nth-of-type(odd) {
-  background-color: var(--color-moss-light);
 }
 
 /* CTA */
@@ -302,32 +257,6 @@ header {
   color: white;
   font-size: 2rem;
   cursor: pointer;
-}
-
-/* Responsive styles */
-@media (max-width: 768px) {
-  .content-container {
-    flex-direction: column;
-  }
-
-  .activity-item {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .image-container {
-    width: 300px;
-    height: auto;
-    aspect-ratio: 1/1;
-  }
-
-  .feature-image {
-    height: 300px;
-  }
-
-  .textblock {
-    padding: 2rem 1rem;
-  }
 }
 
 /* Hosts Section */

@@ -16,9 +16,10 @@
     --spacing-sm: 1rem;
     --spacing-md: 2rem;
     --spacing-lg: 4rem;
+    --spacing-xl: 6rem;
     
     /* Layout */
-    --max-width: 768px;
+    --max-width: auto;
     --border-radius: 12px;
     --nav-height: 60px;
 }

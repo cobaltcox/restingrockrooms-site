@@ -1,12 +1,29 @@
+.main {
+    padding: .5rem;
+    flex: 1;
+}
+
+/* Section Layout */
 .section-root {
-    padding: var(--spacing-md) var(--spacing-md);
+    padding: var(--spacing-md) 0;
+    width: 100%;
     margin: 0;
+}
+
+/* Alternating backgrounds */
+.section-root:nth-of-type(odd) {
+    background-color: var(--color-moss-light);
+}
+
+.section-root:nth-of-type(even) {
+    background-color: var(--color-moss-pale);
 }
 
 .section-content {
     max-width: var(--max-width);
-    margin: auto;
-    padding: 0 var(--spacing-md);
+    width: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 .grid {
@@ -26,5 +43,9 @@
     .grid--2-cols,
     .grid--3-cols {
         grid-template-columns: 1fr;
+    }
+
+    .section-root {
+        padding: var(--spacing-md) 0;
     }
 }
