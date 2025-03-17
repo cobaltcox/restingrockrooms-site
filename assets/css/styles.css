@@ -412,6 +412,7 @@ header {
   text-align: center;
   background-color: white;
   border-radius: var(--border-radius);
+  border: 1px solid var(--color-teal);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
