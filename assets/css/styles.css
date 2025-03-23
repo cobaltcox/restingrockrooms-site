@@ -90,7 +90,7 @@ body {
 /* Grid Container */
 .grid-container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: var(--spacing-md);
   padding: var(--spacing-md);
   margin: 0 auto;
