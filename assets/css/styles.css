@@ -56,9 +56,11 @@ body {
 .section-content {
     width: 100%;
     max-width: var(--max-width);
-    margin: 0 auto;
-    padding: 0 var(--spacing-md);
+    margin: 0 auto; /* Center content */
     box-sizing: border-box;
+    align-content: center;
+    justify-content: center;
+    padding: 0 var(--spacing-md); /* Add padding to ensure content doesn't touch the edges */
 }
 
 /* Section Headers */
@@ -82,6 +84,22 @@ body {
     margin: 0 auto;
     padding: var(--spacing-md);
     justify-content: center;
+    max-width: calc(2 * 450px + var(--spacing-lg)); /* Ensure the container is centered */
+}
+
+/* Grid Container */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--spacing-md);
+  padding: var(--spacing-md);
+  margin: 0 auto;
+  max-width: calc(3 * 1fr + 2 * var(--spacing-md)); /* Ensure the container is centered */
+}
+
+.grid-item {
+    padding: var(--spacing-md);
+    box-sizing: border-box; /* Ensure padding is included in the element's total width and height */
 }
 
 /* ================ Navigation ================ */
@@ -131,12 +149,43 @@ body {
     background-color: var(--color-moss-dark);
 }
 
+/* Naviagtion Icon */
+.navbar-toggle {
+    display: none; /* Hide by default on desktop */
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: var(--color-text-light);
+    padding: var(--spacing-xs);
+    cursor: pointer;
+    height: var(--nav-height);
+    width: var(--nav-height);
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar-toggle i {
+    font-size: 24px;
+    line-height: 1;
+}
+
 /* ================ Components ================ */
 /* Cards */
-.listing,
+.listing {
+    width: 500px;
+    background-color: white;
+    border-radius: var(--border-radius);
+    padding: var(--spacing-md);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+}
+
 .activity-item,
 .host-item {
-    width: 450px;
+    width: auto;
     background-color: white;
     border-radius: var(--border-radius);
     padding: var(--spacing-md);
@@ -172,7 +221,7 @@ body {
 /* Text Blocks */
 .textblock {
     width: 100%;
-    max-width: 800px;
+    max-width: 768px;
     margin: 0 auto var(--spacing-lg);
     text-align: center;
     padding: 0 var(--spacing-md);
@@ -182,6 +231,7 @@ body {
 .cta-button {
     display: inline-block;
     padding: var(--spacing-sm) var(--spacing-md);
+    margin-top: var(--spacing-sm);
     background-color: var(--color-mustard);
     color: var(--color-text);
     text-decoration: none;
@@ -192,21 +242,37 @@ body {
 
 .cta-button:hover {
     transform: translateY(-2px);
+    box-shadow: #a2a2a2 0 2px 4px;
 }
 
 /* ================ Sections ================ */
 /* Header & Hero */
 header {
-  background-color: var(--color-lavender);
-  padding: var(--spacing-md);
-  text-align: center;
+    background-color: var(--color-lavender);
+    text-align: center;
+    width: 100%;
+}
+
+.logo {
+    margin: 0 auto;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo img {
+    height: 80%;
+    width: auto;
+    object-fit: scale-down;
 }
 
 /* CTA Section */
 .cta {
     background-color: var(--color-greyblue);
     text-align: center;
-    padding: var(--spacing-lg) 0;
+    padding: var(--spacing-sm);
+    justify-content: space-between;
 }
 
 /* Ratings Section */
@@ -217,10 +283,12 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: var(--spacing-lg);
-    max-width: 768px;
+    gap: var(--spacing-md);
+    width: 80%;
+    max-width: 600px;
     margin: 0 auto;
     border-radius: var(--border-radius);
+    border: 2px solid var(--color-mustard);
 }
 
 /* Accolades */
@@ -250,6 +318,10 @@ header {
   height: 24px;
 }
 
+.accolade-decoration-right {
+  transform: rotate(180deg);
+}
+
 /* Layout Map */
 .layout-image {
   width: 100%;
@@ -265,7 +337,7 @@ header {
   gap: var(--spacing-md);
   padding: var(--spacing-md);
   max-width: var(--max-width);
-  margin: 0 auto;
+  margin: 0 auto; /* Center content */
 }
 
 .review-card {
@@ -285,25 +357,59 @@ header {
 /* Footer */
 /* Mountain Image */
 .mountain-footer {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-  margin-top: var(--spacing-lg);
+    width: 100%;
+    height: auto;
+    max-width: var(--max-width);
+    max-height: 200px;
+    margin: var(--spacing-sm) auto 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
 }
 
 .footer {
     background-color: var(--color-moss-dark);
     color: var(--color-text-light);
-    padding: var(--spacing-lg) var(--spacing-md);
-    margin-top: auto;
+    padding: var(--spacing-md);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.footer-content {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 0 var(--spacing-md);
+}
+
+.footer-text h3 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.footer-bottom {
+    margin-top: var(--spacing-md);
+    font-size: 0.875rem;
 }
 
 .footer-links {
     display: flex;
     justify-content: center;
-    gap: var(--spacing-md);
+    gap: var(--spacing-xs);
     list-style: none;
     padding: 0;
+}
+
+.footer-links a {
+    color: var(--color-text-light);
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    display: block;
+    border-radius: var(--border-radius);
+}
+
+.footer-links a:hover {
+    background-color: var(--color-moss-medium);
 }
 
 /* ================ Utilities ================ */
@@ -330,12 +436,40 @@ header {
         max-width: 450px !important;
     }
 
-    .reviews-grid {
+    .reviews-grid,
+    .grid-container {
         grid-template-columns: repeat(2, 1fr);
+        gap: var(--spacing-md);
+        padding: var(--spacing-md);
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    .grid-item {
+        width: 100%; /* Ensure grid items take full width in 2-column layout */
     }
 }
 
 @media screen and (max-width: 768px) {
+    .navbar-toggle {
+        display: flex; /* Show on mobile */
+    }
+
+    .navbar-container {
+        padding: 0;
+    }
+
+    .navbar-logo {
+        height: var(--nav-height);
+        padding: var(--spacing-xs);
+    }
+
+    .navbar-logo img {
+        height: 100%;
+        width: auto;
+        object-fit: contain;
+    }
+
     .navbar-container {
         flex-wrap: wrap;
     }
@@ -356,8 +490,17 @@ header {
         padding: var(--spacing-sm);
     }
 
-    .reviews-grid {
+    .reviews-grid,
+    .grid-container {
         grid-template-columns: 1fr;
+        gap: var(--spacing-md);
+        padding: var(--spacing-md);
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    .grid-item {
+        width: 100%; /* Ensure grid items take full width in 1-column layout */
     }
 
     .guest-favorite {
