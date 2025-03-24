@@ -19,28 +19,4 @@ document.addEventListener('DOMContentLoaded', function() {
     } else {
         console.error('Navigation elements not found');
     }
-
-    // Add fullscreen image functionality
-    const modal = document.getElementById('fullscreen-modal');
-    const modalImg = document.getElementById('modal-image');
-    const closeBtn = document.querySelector('.close-modal');
-    const fullscreenBtns = document.querySelectorAll('.fullscreen-btn');
-
-    fullscreenBtns.forEach(btn => {
-        btn.addEventListener('click', function() {
-            const img = this.previousElementSibling;
-            modal.style.display = "block";
-            modalImg.src = img.src;
-        });
-    });
-
-    closeBtn.addEventListener('click', function() {
-        modal.style.display = "none";
-    });
-
-    modal.addEventListener('click', function(e) {
-        if (e.target === modal) {
-            modal.style.display = "none";
-        }
-    });
 });
