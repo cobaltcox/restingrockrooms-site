@@ -19,4 +19,20 @@ document.addEventListener('DOMContentLoaded', function() {
     } else {
         console.error('Navigation elements not found');
     }
+
+    // Show logo on navbar when scrolled past header
+    const header = document.querySelector('header');
+    const navbarLogo = document.querySelector('.navbar-logo img');
+
+    // Initially hide the navbar logo
+    navbarLogo.style.opacity = 0;
+    navbarLogo.style.transition = '0.3s';
+
+    window.addEventListener('scroll', function() {
+        if (window.scrollY > header.offsetHeight) {
+            navbarLogo.style.opacity = 1;
+        } else {
+            navbarLogo.style.opacity = 0;
+        }
+    });
 });

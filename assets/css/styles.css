@@ -22,7 +22,7 @@
     /* Layout */
     --max-width: 1200px;
     --border-radius: 12px;
-    --nav-height: 60px;
+    --nav-height: 50px;
 }
 
 /* ================ Base Styles ================ */
@@ -122,7 +122,8 @@ body {
 }
 
 .navbar-logo {
-    height: 40px;
+    height: var(--nav-height);
+    padding: var(--spacing-xs);
 }
 
 .navbar-logo img {
