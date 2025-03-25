@@ -185,8 +185,10 @@ body {
     border: var(--color-teal) 3px solid;
 }
 
-.listing a:hover {
-    border: var(--color-moss-pale) 20px solid;
+.listing:hover {
+    border: var(--color-mustard) 3px solid;
+    outline: var(--color-mustard) 3px solid;
+    transition: .3s;
 }
 
 .activity-item,
