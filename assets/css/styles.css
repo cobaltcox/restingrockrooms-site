@@ -82,7 +82,6 @@ body {
     grid-template-columns: repeat(2, 450px);
     gap: var(--spacing-lg);
     margin: 0 auto;
-    padding: var(--spacing-md);
     justify-content: center;
     max-width: calc(2 * 450px + var(--spacing-lg)); /* Ensure the container is centered */
 }
@@ -227,10 +226,10 @@ body {
 
 /* Text Blocks */
 .textblock {
-    width: 100%;
-    max-width: 768px;
+    width: 80%;
+    max-width: var(--max-width);
     margin: 0 auto var(--spacing-sm);
-    text-align: center;
+    text-align: left;
     padding: 0 var(--spacing-xs);
 }
 
@@ -312,7 +311,7 @@ header {
     align-items: center;
     text-align: center;
     padding: 1rem;
-    width: 200px;
+    width: 120px;
   }
   
   /* Rating styles */
@@ -355,7 +354,7 @@ header {
   .accolade-decoration-left,
   .accolade-decoration-right {
     position: absolute;
-    height: 80%;
+    height: 60%;
   }
   
   .accolade-decoration-left {
@@ -423,6 +422,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: flex-end;
+    overflow: hidden;
 }
 
 .footer {
@@ -477,7 +477,6 @@ header {
 @media screen and (max-width: 1024px) {
     .content-container {
         grid-template-columns: 1fr;
-        padding: var(--spacing-sm);
         width: 100%;
         max-width: 500px;
     }
@@ -528,15 +527,11 @@ header {
         object-fit: contain;
     }
 
-    .navbar-container {
-        flex-wrap: wrap;
-    }
-
     .main-nav {
         display: none;
         width: 100%;
         flex-direction: column;
-        text-align: center;
+        text-align: right;
     }
 
     .main-nav.active {
@@ -556,6 +551,10 @@ header {
         padding: var(--spacing-sm);
     }
 
+    .guest-favorite {
+        flex-direction: column;
+    }
+
     .reviews-grid,
     .grid-container {
         grid-template-columns: 1fr;
@@ -569,7 +568,8 @@ header {
         width: 100%; /* Ensure grid items take full width in 1-column layout */
     }
 
-    .guest-favorite {
+    .footer-links {
         flex-direction: column;
+        gap: var(--spacing-xs);
     }
 }
