@@ -1,11 +1,19 @@
 document.addEventListener('DOMContentLoaded', function() {
     const navbarToggle = document.getElementById('js-navbar-toggle');
     const mainNav = document.getElementById('js-menu');
+    const navbarLogo = document.querySelector('.navbar-logo');
 
     // Toggle menu
     if (navbarToggle && mainNav) {
         navbarToggle.addEventListener('click', function() {
             mainNav.classList.toggle('active');
+            if (mainNav.classList.contains('active')) {
+                navbarLogo.style.visibility = 'hidden';
+                navbarToggle.style.visibility = 'hidden';
+            } else {
+                navbarLogo.style.visibility = 'visible';
+                navbarToggle.style.visibility = 'visible';
+            }
             console.log('Menu toggled'); // Helpful for debugging
         });
 
@@ -14,6 +22,8 @@ document.addEventListener('DOMContentLoaded', function() {
         navLinks.forEach(link => {
             link.addEventListener('click', function() {
                 mainNav.classList.remove('active'); // Close menu when link is clicked
+                navbarLogo.style.visibility = 'visible';
+                navbarToggle.style.visibility = 'visible';
             });
         });
     } else {
@@ -22,17 +32,17 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Show logo on navbar when scrolled past header
     const header = document.querySelector('header');
-    const navbarLogo = document.querySelector('.navbar-logo img');
+    const navbarLogoImg = navbarLogo.querySelector('img');
 
     // Initially hide the navbar logo
-    navbarLogo.style.opacity = 0;
-    navbarLogo.style.transition = '0.3s';
+    navbarLogoImg.style.opacity = 0;
+    navbarLogoImg.style.transition = '0.3s';
 
     window.addEventListener('scroll', function() {
         if (window.scrollY > header.offsetHeight) {
-            navbarLogo.style.opacity = 1;
+            navbarLogoImg.style.opacity = 1;
         } else {
-            navbarLogo.style.opacity = 0;
+            navbarLogoImg.style.opacity = 0;
         }
     });
 });

@@ -170,6 +170,11 @@ body {
     line-height: 1;
 }
 
+.main-nav.active ~ .navbar-logo,
+.main-nav.active ~ .navbar-toggle {
+    visibility: hidden;
+}
+
 /* ================ Components ================ */
 /* Cards */
 .listing {
