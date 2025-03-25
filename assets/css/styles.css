@@ -139,7 +139,8 @@ body {
 }
 
 .main-nav a {
-    color: white;
+    color: var(--color-moss-pale);
+    font-weight: bold;
     text-decoration: none;
     padding: 1rem;
     display: block;
@@ -147,7 +148,7 @@ body {
 }
 
 .main-nav a:hover {
-    background-color: var(--color-moss-dark);
+    background-color: var(--color-teal);
 }
 
 /* Naviagtion Icon */
@@ -156,7 +157,7 @@ body {
     background: none;
     border: none;
     font-size: 24px;
-    color: var(--color-text-light);
+    color: var(--color-moss-pale);
     padding: var(--spacing-xs);
     cursor: pointer;
     height: var(--nav-height);
@@ -185,10 +186,14 @@ body {
     border: var(--color-teal) 3px solid;
 }
 
+.listing a:hover {
+    border: var(--color-moss-pale) 20px solid;
+}
+
 .activity-item,
 .host-item {
     width: auto;
-    background-color: white;
+    background-color: var(--color-moss-light);
     border-radius: var(--border-radius);
     padding: var(--spacing-md);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -264,7 +269,7 @@ header {
 }
 
 .logo img {
-    height: 80%;
+    height: 70%;
     width: auto;
     object-fit: scale-down;
 }
