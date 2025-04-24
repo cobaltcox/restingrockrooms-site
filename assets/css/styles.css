@@ -305,11 +305,12 @@ header {
     justify-content: center;
     align-items: center;
     gap: var(--spacing-md);
-    width: 80%;
-    max-width: 600px;
+    width: fit-content;
+    max-width: var(--max-width);
     margin: 0 auto;
     border-radius: var(--border-radius);
     border: 2px solid var(--color-mustard);
+
 }
   
   .accolade {
@@ -555,7 +556,9 @@ header {
 
     .accolade-container {
         flex-direction: column;
-        padding: var(--spacing-sm);
+        padding: var(--spacing-md);
+        width: 50%;
+        min-width: fit-content;
     }
 
     .guest-favorite {
