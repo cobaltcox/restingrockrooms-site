@@ -6,10 +6,9 @@ Centralized page to show promote all listings.
 
 **Tools:**
 Build on github
-Deploy on Cloudflare
+Deploy on github pages
 
 **Branch Strategy:**
-<ul><li>Main</li>
-  <li>Public</li>
-  <li>Stage</li>
+<ul><li>Main - public branch</li>
+  <li>Dev - for active developemnt and staging</li>
 </ul>
