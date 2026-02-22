@@ -138,7 +138,7 @@ body {
 }
 
 .main-nav a {
-    color: var(--color-moss-pale);
+    color: var(--color-teal);
     font-weight: bold;
     text-decoration: none;
     padding: 1rem;
@@ -147,7 +147,7 @@ body {
 }
 
 .main-nav a:hover {
-    background-color: var(--color-teal);
+    background-color: var(--color-greyblue);
 }
 
 /* Naviagtion Icon */
